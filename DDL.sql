@@ -1,11 +1,11 @@
-CREATE TABLE study  #建置資料表 先寫欄位名稱再寫dtype
+CREATE TABLE study  -- 建置資料表 先寫欄位名稱再寫dtype
 (
 	ID NUMERIC(10,0) PRIMARY KEY,
     STUDENT_NAME VARCHAR(255)
 );
-DROP TABLE study;  #刪除資料表
-TRUNCATE TABLE study;  #刪除資料表
-DELETE FROM study;  #刪除資料表 # MySQL預設safe mode，沒有下where條件無法執行此語句，需要到Edit->Preferences->SQL Editor->Other 把Safe Updates的勾勾給取消
+DROP TABLE study;  -- 刪除資料表
+TRUNCATE TABLE study;  -- 刪除資料表
+DELETE FROM study;  -- 刪除資料表 # MySQL預設safe mode，沒有下where條件無法執行此語句，需要到Edit->Preferences->SQL Editor->Other 把Safe Updates的勾勾給取消
 
 /*
 DELETE FROM table_name，是DML語法，主要用於刪除表內的records，沒有下where條件就是刪除整張表的records
