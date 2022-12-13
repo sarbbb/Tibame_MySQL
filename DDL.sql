@@ -5,12 +5,11 @@ CREATE TABLE study  #建置資料表 先寫欄位名稱再寫dtype
 );
 DROP TABLE study;  #刪除資料表
 TRUNCATE TABLE study;  #刪除資料表
-DELETE FROM study;  #刪除資料表 # MySQL預設safe mode，沒有下where條件無法執行此語句ALTER，需要到Edit->Preferences->SQL Editor->Other 把Safe Updates的勾勾給取消
+DELETE FROM study;  #刪除資料表 # MySQL預設safe mode，沒有下where條件無法執行此語句，需要到Edit->Preferences->SQL Editor->Other 把Safe Updates的勾勾給取消
 
 /*
 DELETE FROM table_name，是DML語法，主要用於刪除表內的records，沒有下where條件就是刪除整張表的records
-*/
-/*
+
 相同點：drop、delete、truncate 都是刪除表的內容。
 不同點：
 •	delete：刪除表的內容，表的結構還存在，不釋放空間，可以回滾恢復；
